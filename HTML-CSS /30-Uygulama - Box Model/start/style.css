@@ -10,11 +10,24 @@
 #other-posts{
 	width: 25%;	
 	float: left;
+	position: fixed;
+	top: 20px;
+	right: 0;
 }
 
 #author-box
 {
 	
+}
+
+.blog-post{
+	position: relative;
+}
+
+.date{
+	position: absolute;
+	right:50px;
+	top: 0;
 }
 
 .tags{
@@ -31,5 +44,3 @@
 .tags li a{
 	text-decoration: none;
 }
-
-/* positon stıcky de ekranda belırlenen noktada o satır kalıyor */
