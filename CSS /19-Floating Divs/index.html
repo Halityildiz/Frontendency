@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Floating Divs</title>
+	<style>
+		
+		#container{
+			background: gray;
+		}
+		
+		.box {
+			width: 200px;
+			height: 200px;
+			margin: 5px;
+		}
+
+		#first {
+			background: red;
+			float: right;
+		}
+
+		#second {
+			background: blue;
+			float: right;
+		}
+
+		#third {
+			background: green;
+			float: right;
+		}
+		
+		.clearfix:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		
+		p:before{
+			content: " - deneme";
+			display: block;
+		}
+		/* pseudo kodları before after ile p:after yani pden sonra gelen after ın contentıne sonuna ekleme yapar*/
+
+	</style>
+</head>
+
+<body>
+
+
+	<div id="container" class="clearfix">
+
+		<div id="first" class="box"></div>
+		<div id="second" class="box"></div>
+		<div id="third" class="box"></div>
+
+	</div>
+	
+	<p>
+		Lorem ipsum dolor.
+	</p>
+	
+</body>
+
+</html>
