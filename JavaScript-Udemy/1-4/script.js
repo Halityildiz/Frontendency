@@ -21,6 +21,7 @@ console.log(val.length)
 // toString()
 
 val = (10).toString()
+val =(20).toString();
 val = (false).toString()
 
 // string to number
