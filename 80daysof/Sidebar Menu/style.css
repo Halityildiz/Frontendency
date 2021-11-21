@@ -90,7 +90,7 @@ a {
 .logo:hover {
   background-color: #f13303;
   transition: all 0.3s linear;
-  transform: rotate(360deg);
+  transform: rotate(180deg);
 }
 
 .links a {
