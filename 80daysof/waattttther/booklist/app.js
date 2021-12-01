@@ -33,20 +33,11 @@ form.addEventListener("submit", (e) => {
     `;
   }
 
-  // bookList.querySelectorAll('button').forEach(button => {
-  //   button.addEventListener('click', e => {
-  //     e.target.closest('tr').remove();
-  //   });
-  // });
-
   bookList.addEventListener("click", (e) => {
     if (e.target.classList.contains("btn-danger")) {
       e.target.closest("tr").remove();
     }
   });
-
-  // title.value = '';
-  // bookTitle = '';
 
   form.reset();
 });
@@ -58,17 +49,14 @@ searchBox.addEventListener("keyup", () => {
 
 const searchBook = (key) => {
   const allBooks = bookList.querySelectorAll("tr");
-  console.log(allBooks);
 
   allBooks.forEach((book) => {
-    console.log(!book.children[0].innerText.toLowerCase().includes(key));
-    if (!book.children[0].innerText.includes(key)) {
+    if (!book.children[0].innerText.toLowerCase().includes(key)) {
       book.classList.add("hide");
     }
   });
   allBooks.forEach((book) => {
-    console.log(book.children[0].innerText.toLowerCase().includes(key));
-    if (book.children[0].innerText.includes(key)) {
+    if (book.children[0].innerText.toLowerCase().includes(key)) {
       book.classList.remove("hide");
     }
   });
