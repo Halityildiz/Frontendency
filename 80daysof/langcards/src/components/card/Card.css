@@ -75,15 +75,12 @@ h1 {
   display: block;
   margin: auto;
   border-radius: 40%;
-  /* animation: logomoves 10s infinite; */
+  position: relative;
+  left: -10px;
+  top: -8px;
   outline: 3px inset #04befe;
 }
 #logo:hover {
   transition: all 0.3s linear;
   transform: rotate(360deg);
 }
-/* @keyframes logomoves {
-  50% {
-    transform: rotate(360deg);
-  }
-} */
