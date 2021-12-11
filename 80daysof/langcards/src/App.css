@@ -1,0 +1,78 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  font-family: "Nunito", sans-serif;
+  padding: 3rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(4, 1fr);
+  max-width: 600px;
+  margin: auto;
+  margin-top: 1rem;
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: whitesmoke;
+  height: 150px;
+}
+
+.card:hover {
+  cursor: pointer;
+  outline: 3px inset rgb(163, 153, 218);
+}
+.card img {
+  width: 5rem;
+
+  display: block;
+  margin: auto;
+}
+
+.card img:hover {
+  width: 6.2rem;
+}
+
+.card h4 {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.info {
+  text-decoration: none;
+  list-style: none;
+}
+#logo {
+  width: 150px;
+  display: block;
+  margin: auto;
+  border-radius: 40%;
+  animation: logomoves 10s infinite;
+  outline: 3px inset red;
+}
+@keyframes logomoves {
+  50% {
+    transform: rotate(360deg);
+  }
+} */
